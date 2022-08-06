@@ -45,7 +45,7 @@ public class CategoryServiceImpl extends AbstractService implements CategoryServ
          */
 
         String key = form.getRequestUri();
-        CategoryResponse result = (CategoryResponse) responseLocalCache.get(key + "3");
+        CategoryResponse result = (CategoryResponse) responseLocalCache.get(key);
         if (result == null) {
             result = new CategoryResponse();
             Integer categoryId = form.getCategoryId();
