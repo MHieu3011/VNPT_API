@@ -43,7 +43,7 @@ public class SQLConnectionFactory {
         hikariDataSource = new HikariDataSource(config);
     }
 
-    public Connection getMySQLConnection() throws SQLException {
+    public Connection getSQLConnection() throws SQLException {
         return hikariDataSource.getConnection();
     }
 }
